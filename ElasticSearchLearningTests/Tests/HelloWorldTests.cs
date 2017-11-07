@@ -1,21 +1,20 @@
 ﻿using Elasticsearch.Net;
 using ElasticSearchLearningTests.ElasticSearchConfigurations.Interfaces;
-using ElasticSearchLearningTests.Logging.Interfaces;
 using ElasticSearchLearningTests.Models;
-using log4net;
 using Xunit;
+using Xunit.Abstractions;
 
 namespace ElasticSearchLearningTests.Tests
 {
     public class HelloWorldTests : BaseDependencyResolutionTests
     {
         private readonly ConnectionConfiguration _defaultConfiguration;
-        private readonly ILog _logger;
+        private readonly ITestOutputHelper _output;
 
-        public HelloWorldTests()
+        public HelloWorldTests(ITestOutputHelper output)
         {
+            this._output = output;
             _defaultConfiguration = Container.GetInstance<IConnectionConfigurationResolver>().GetConnectionConfiguration();
-            _logger = Container.GetInstance<ILoggerResolver>().GetLogger(GetType());
         }
 
         [Fact]
@@ -24,7 +23,7 @@ namespace ElasticSearchLearningTests.Tests
             var lowlevelClient = new ElasticLowLevelClient(_defaultConfiguration);
             var person = new Person {FirstName = "Hello", LastName = "World"};
             var indexResponse = lowlevelClient.Index<byte[]>("people", "person", "1", person);
-            _logger.Debug(indexResponse.DebugInformation);
+            _output.WriteLine(indexResponse.DebugInformation);
             var responseBody = indexResponse.Body;
             Assert.NotNull(responseBody);
         }

@@ -1,9 +1,8 @@
 Castle.Core
 Elasticsearch.Net
-log4net
 Moq
 NEST
-Newtonsoft.Json
+Newtonsoft.Jso
 StructureMap
 System.Reflection.Emit.Lightweight
 xunit

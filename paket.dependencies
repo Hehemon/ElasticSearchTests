@@ -2,7 +2,6 @@ source https://www.nuget.org/api/v2/
 
 nuget Castle.Core
 nuget Elasticsearch.Net
-nuget log4net
 nuget Moq
 nuget NEST
 nuget Newtonsoft.Json
