@@ -1,0 +1,15 @@
+Castle.Core
+Elasticsearch.Net
+log4net
+Moq
+NEST
+Newtonsoft.Json
+StructureMap
+System.Reflection.Emit.Lightweight
+xunit
+xunit.abstractions
+xunit.analyzers
+xunit.assert
+xunit.core
+xunit.extensibility.core
+xunit.extensibility.execution

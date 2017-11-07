@@ -3,6 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26228.12
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{47B0F017-ACAD-4690-A1C8-F894EA4C04E2}"
+	ProjectSection(SolutionItems) = preProject
+		paket.dependencies = paket.dependencies
+	EndProjectSection
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElasticSearchLearningTests", "ElasticSearchLearningTests\ElasticSearchLearningTests.csproj", "{4E267A0F-CCD4-43F8-BDFC-48AAE8E1D9D4}"
 EndProject
 Global

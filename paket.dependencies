@@ -1,0 +1,17 @@
+source https://www.nuget.org/api/v2/
+
+nuget Castle.Core
+nuget Elasticsearch.Net
+nuget log4net
+nuget Moq
+nuget NEST
+nuget Newtonsoft.Json
+nuget StructureMap
+nuget System.Reflection.Emit.Lightweight
+nuget xunit
+nuget xunit.abstractions
+nuget xunit.analyzers
+nuget xunit.assert
+nuget xunit.core
+nuget xunit.extensibility.core
+nuget xunit.extensibility.execution
