@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ElasticSearchLearningTests.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ElasticSearchUsername" Type="System.String" Scope="User">
+      <Value Profile="(Default)">elastic</Value>
+    </Setting>
+    <Setting Name="ElasticSearchPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">changeme</Value>
+    </Setting>
+    <Setting Name="ElasticSearchUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://192.168.99.100:9200</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

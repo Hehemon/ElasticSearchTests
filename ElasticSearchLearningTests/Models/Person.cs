@@ -1,4 +1,4 @@
-﻿namespace ElasticSearchLearningTests.Model
+﻿namespace ElasticSearchLearningTests.Models
 {
     public class Person
     {
