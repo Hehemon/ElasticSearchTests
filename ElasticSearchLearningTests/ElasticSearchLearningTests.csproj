@@ -44,7 +44,9 @@
   <ItemGroup>
     <Compile Include="DependencyResolution\Registries\DefaultTestRegistry.cs" />
     <Compile Include="ElasticSearchConfigurations\DefaultConnectionConfigurationResolver.cs" />
+    <Compile Include="ElasticSearchConfigurations\DefaultConnectionSettingsResolver.cs" />
     <Compile Include="ElasticSearchConfigurations\Interfaces\IConnectionConfigurationResolver.cs" />
+    <Compile Include="ElasticSearchConfigurations\Interfaces\IConnectionSettingsResolver.cs" />
     <Compile Include="Tests\BaseDependencyResolutionTests.cs" />
     <Compile Include="Tests\HelloWorldTests.cs" />
     <Compile Include="DependencyResolution\IoC.cs" />
@@ -55,6 +57,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Tests\NestHelloWorldTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
