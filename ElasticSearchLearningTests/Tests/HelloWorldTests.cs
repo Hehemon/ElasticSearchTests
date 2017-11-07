@@ -6,6 +6,9 @@ using Xunit.Abstractions;
 
 namespace ElasticSearchLearningTests.Tests
 {
+    /// <summary>
+    /// For those test should be available ElasticSearch server
+    /// </summary>
     public class HelloWorldTests : BaseDependencyResolutionTests
     {
         private const string DefaultIndex = "people";
